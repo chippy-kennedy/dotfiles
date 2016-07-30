@@ -1,0 +1,4 @@
+#Some Useful Ubuntu Configurations
+
+# Change Local Host name - so APIs (like facebook) can read local.host as a domain for a development server
+sudo vim /etc/hosts; localhost => local.host; :wq!
