@@ -6,4 +6,5 @@ sudo vim /etc/hosts; localhost => local.host; :wq!
 # Find a string in a directory
 grep -rnw '/path/to/somewhere/' -e "pattern"
 
-
+#Supplement a Fresh Vim Install - allow for copy/paste to clipboard
+sudo apt-get install vim-gtk
