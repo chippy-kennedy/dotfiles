@@ -2,6 +2,7 @@
 
 # Change Local Host name - so APIs (like facebook) can read local.host as a domain for a development server
 sudo vim /etc/hosts; localhost => local.host; :wq!
+#**May cause issues with resolv lib, revert to fix
 
 # Find a string in a directory
 grep -rnw '/path/to/somewhere/' -e "pattern"
