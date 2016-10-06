@@ -5,3 +5,6 @@ JS_PATH = "app/assets/javascripts/**/*.js";
   puts "\n#{file_name}"
   puts Uglifier.compile(File.read(file_name))
 end
+
+# Force Server or Service (i.e. Capfile, Heroku) to Recompile Assets
+# >> Edit config/initializers/assets.rb and change version
