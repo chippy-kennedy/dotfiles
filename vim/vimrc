@@ -1,5 +1,5 @@
 "general
-execute pathogen#infect()
+"execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
@@ -7,3 +7,34 @@ filetype plugin indent on
 set number
 set tabstop=2
 set shiftwidth=2
+set nowrap
+set noswapfile
+
+" Open new split panes to right and bottom, which feels more natural
+set splitbelow
+set splitright
+
+"Set moving between splits to ctr-
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+"RSpec Shortcuts
+" Cmd-Shift-R for RSpec
+nmap <silent> <D-R> :call RunRspecCurrentFileConque()<CR>
+" Cmd-Shift-L for RSpec Current Line
+nmap <silent> <D-L> :call RunRspecCurrentLineConque()<CR>
+" ,Cmd-R for Last conque command
+nmap <silent> ,<D-R> :call RunLastConqueCommand()<CR>
+
+nmap <silent> <Leader>rcrr :call RunRubyCurrentFileConque()<CR>
+nmap <silent> <Leader>rcss :call RunRspecCurrentFileConque()<CR>
+nmap <silent> <Leader>rcll :call RunRspecCurrentLineConque()<CR>
+nmap <silent> <Leader>rccc :call RunCucumberCurrentFileConque()<CR>
+nmap <silent> <Leader>rccl :call RunCucumberCurrentLineConque()<CR>
+nmap <silent> <Leader>rcRR :call RunRakeConque()<CR>
+nmap <silent> <Leader>rcrl :call RunLastConqueCommand()<CR>
+
+nnoremap <silent> <C-s> :call RelatedSpecVOpen()<CR>
+nnoremap <silent> ,<C-s> :call RelatedSpecOpen()<CR>
