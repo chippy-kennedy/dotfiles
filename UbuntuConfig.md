@@ -10,5 +10,10 @@ grep -rnw '/path/to/somewhere/' -e "pattern"
 #Supplement a Fresh Vim Install - allow for copy/paste to clipboard
 sudo apt-get install vim-gtk
 
+#User Puttygen to Convert Keys
+## ppk --> rsa
+`puttygen id_dsa.ppk -O private-openssh -o id_dsa`
+`puttygen id_dsa.ppk -O public-openssh -o id_dsa.pub`
+
 # Random Unix Stuff
 env vars stored in `~/.bash_profile`
