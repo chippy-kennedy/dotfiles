@@ -1,3 +1,7 @@
+#Settings + SSH
+#New SSH Key
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
 #~Git aliasing
 git config --global alias.st status
 git config --global alias.co checkout
