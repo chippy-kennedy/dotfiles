@@ -1,5 +1,5 @@
 #### On Linux
->tar -xvfJ filename.tar.xz
+>tar -xvf filename.tar.xz
 
 >tar -zxvf filename.tar.gz
 
