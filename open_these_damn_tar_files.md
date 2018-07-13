@@ -6,3 +6,5 @@
 >tar -zxvf filename.tar.gz
 
 >tar -jxf  filename.tar.bz2
+
+>tar -xvzf filename.tgz
