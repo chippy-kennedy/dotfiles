@@ -1,21 +1,25 @@
-#Settings + SSH
-#New SSH Key
+# Settings + SSH
+## New SSH Key
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 
-#~Git aliasing
+## Git aliasing
 git config --global alias.st status
 git config --global alias.co checkout
 git config --global alias.br branch
 git config --global alias.ci commit
 git config --global alias.lg log --graph
 
-#HTTPS Remote - Set Password Cache and Respective Timeout (seconds)
+## HTTPS Remote - Set Password Cache and Respective Timeout (seconds)
 git config --global credential.helper cache
 git config --global credential.helper 'cache --timeout=3600'
 
-#~Git Commands
-#Delete Local Br
+# PrePush Config
+git config --global filter.tabspace.smudge 'gunexpand --tabs=4 --first-only'
+git config --global filter.tabspace.clean 'gexpand --tabs=4 --initial'
+
+## Git Commands
+### Delete Local Br
 git branch -d branch_name
 
-#Delete Remote Br
+## Delete Remote Br
 git push origin --delete <branchName>
