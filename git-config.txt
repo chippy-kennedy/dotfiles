@@ -23,3 +23,7 @@ git branch -d branch_name
 
 ## Delete Remote Br
 git push origin --delete <branchName>
+
+
+## Flow and Branch Mgmt
+git config --global --add --bool push.autoSetupRemote true
